@@ -1,4 +1,5 @@
 using SecureTechSolutions.Components;
+using Datos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,4 +25,5 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
+//Datos.DBConnection.Probar(); probar conexion a BD
 app.Run();

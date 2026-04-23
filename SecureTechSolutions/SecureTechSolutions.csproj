@@ -10,4 +10,8 @@
     <Folder Include="Entidades\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj" />
+  </ItemGroup>
+
 </Project>
