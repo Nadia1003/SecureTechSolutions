@@ -10,7 +10,6 @@ namespace Entidades
     {
         public int Id { get; set; }
         public string UrlArchivo { get; set; }
-        public string UrlFoto { get; set; }
         public string Descripcion { get; set; }
         public Hallazgo Hallazgo { get; set; }
     }

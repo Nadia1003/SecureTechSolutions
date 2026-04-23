@@ -17,11 +17,12 @@ namespace Entidades
         public string Prioridad { get; set; }
         public string Estado { get; set; }
         public DateTime FechaDeteccion { get; set; }
-        public DateTime FechaCierre { get; set; }
+        public DateTime? FechaCierre { get; set; }
         public string Observacion { get; set; }
         public string Sector { get; set; }
-        public Usuario Usuario { get; set; } //Resaponsable
-        public Auditoria Auditoria { get; set; }
+        public Usuario UsuarioCreador { get; set; } //El que detectó el hallazgo
+        public Usuario UsuarioResponsable { get; set; } //Resaponsable de resolverlo
+        public Auditoria? Auditoria { get; set; } //puede haberse detectado en una auditoria como no
         public List<Evidencia> ListaEvidencia { get; set; }
         
     }

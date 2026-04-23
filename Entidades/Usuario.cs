@@ -15,10 +15,11 @@ namespace Entidades
 		public string Contraseña { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public int NumIntentos { get; set; }
+        public int? NumIntentos { get; set; }
         public bool Activo { get; set; }
         public DateTime FechaCreacion { get; set; }
-        public DateTime UltimoLogin { get; set; }
+        public DateTime? UltimoLogin { get; set; }
         public Rol Rol { get; set; }
+        public Empresa Empresa { get; set; }
     }
 }

@@ -9,12 +9,13 @@ namespace Entidades
     public class Auditoria
     {
         public int Id { get; set; }
-        public Empresa EmpresaId { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime? FechaProgramada { get; set; }
         public string Tipo { get; set; }
         public string Descripcion { get; set; }
-        public Usuario UsuarioId { get; set; }
-
-
+        public string Estado { get; set; }
+        public string Observaciones { get; set; }
+        public Usuario Usuario { get; set; }
+        public Edificio Edificio { get; set; }
     }
 }
